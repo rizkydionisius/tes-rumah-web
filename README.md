@@ -1,35 +1,48 @@
 # tes-rumah-web
 
-This template should help get you started developing with Vue 3 in Vite.
+## Link Deploy Aplikasi
+https://dion-tes-rumahweb.netlify.app/
 
-## Recommended IDE Setup
+Aplikasi frontend sederhana yang menampilkan data pengguna menggunakan API `https://jsonplaceholder.typicode.com/users`. Aplikasi ini dibuat dengan Vue.js dan memiliki fitur daftar pengguna, detail pengguna, dan pencarian pengguna berdasarkan email.
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
+## Fitur
+1. Daftar Pengguna: Menampilkan daftar nama, email, dan alamat pengguna.
+2. Detail Pengguna: Menampilkan detail lengkap pengguna ketika nama pengguna diklik.
+3. Pencarian Pengguna: Fitur pencarian pengguna berdasarkan email.
 
-## Customize configuration
+## Teknologi yang Digunakan
+- JavaScript
+- Vue.js
+- Axios (untuk mengambil data dari API)
 
-See [Vite Configuration Reference](https://vite.dev/config/).
-
-## Project Setup
-
-```sh
+## Panduan Instalasi dan Setup
+### 1. Menginstal dependensi yang dibutuhkan
+Buka terminal atau command prompt di direktori proyek dan jalankan perintah berikut:
+```bash
 npm install
 ```
-
-### Compile and Hot-Reload for Development
-
+### 2. Compile and Hot-Reload for Development
 ```sh
 npm run dev
 ```
 
-### Compile and Minify for Production
+### 3. Compile and Minify for Production
 
 ```sh
 npm run build
 ```
 
-### Lint with [ESLint](https://eslint.org/)
+## Penjelasan Struktur Kode
+/src
+  /assets
+  /components
+    UserList.vue          # Komponen untuk menampilkan daftar pengguna
+    UserDetail.vue        # Komponen untuk menampilkan detail pengguna
+    SearchBar.vue         # Komponen untuk fitur pencarian pengguna berdasarkan email
+  App.vue                 # Komponen utama aplikasi
+  main.js                 # Titik masuk aplikasi
 
-```sh
-npm run lint
-```
+## Langkah untuk menjalankan Aplikasi
+1. Ketika aplikasi sudah terbuka, maka akan muncul judul aplikasi User Management App, dalam halaman ini user dapat melihat semua daftar pengguna yang berisi (nama, email, dan alamat pengguna)
+2. Ketika nama pengguna di klik, maka di bagian bawah list akan muncul detail lengkap pengguna
+3. Ketika diarahkan ke search bar, pengguna dapat melakukan pencarian berdasarkan email dan akan menampilkan data lengkap sesuai dengan emailnya
