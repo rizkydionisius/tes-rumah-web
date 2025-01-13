@@ -33,14 +33,12 @@ npm run build
 ```
 
 ## Penjelasan Struktur Kode
-/src
-  /assets
-  /components
-    UserList.vue          # Komponen untuk menampilkan daftar pengguna
-    UserDetail.vue        # Komponen untuk menampilkan detail pengguna
-    SearchBar.vue         # Komponen untuk fitur pencarian pengguna berdasarkan email
-  App.vue                 # Komponen utama aplikasi
-  main.js                 # Titik masuk aplikasi
+**`/src`**: Direktori utama untuk file sumber aplikasi.
+     - **`UserList.vue`**: Bagian ini menampilkan daftar pengguna, dengan nama, email, dan alamat. Ketika nama pengguna diklik, akan menampilkan detail pengguna.
+     - **`UserDetail.vue`**: Bagian ini menampilkan detail lengkap dari pengguna yang dipilih, termasuk nama, email, dan alamat lengkap.
+     - **`SearchBar.vue`**: Bagian ini menyediakan kolom pencarian untuk mencari pengguna berdasarkan email. Ketika pengguna mengetikkan email, aplikasi akan memfilter hasil pencarian berdasarkan input yang diberikan.
+   - **`App.vue`**: Bagian utama aplikasi yang mengatur bagaimana komponen lainnya digabungkan dan ditampilkan di layar. Komponen ini mengimpor `UserList`, `UserDetail`, dan `SearchBar`, serta mengatur interaksi antar komponen.
+   - **`main.js`**: Titik masuk aplikasi yang menginisialisasi Vue dan memasang `App.vue` ke dalam elemen dengan id `#app` di halaman HTML.
 
 ## Langkah untuk menjalankan Aplikasi
 1. Ketika aplikasi sudah terbuka, maka akan muncul judul aplikasi User Management App, dalam halaman ini user dapat melihat semua daftar pengguna yang berisi (nama, email, dan alamat pengguna)
